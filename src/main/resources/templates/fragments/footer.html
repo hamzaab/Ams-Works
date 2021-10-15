@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+<div th:fragment="footer">
+
+    <div class="container" align="center" style="padding-top:400px">
+
+       <!--  <footer>
+        this is footer
+        © 2019 SIP
+            <span sec:authorize="isAuthenticated()">
+                | Logged user: <span sec:authentication="name"></span> |
+                Roles: <span sec:authentication="principal.authorities"></span>
+            </span>
+        </footer> -->
+        
+        
+         <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://www.linkedin.com/in/hamza-abdennadher/"> HA </a> 2021</p>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+
+ 	<script type="text/javascript" th:src="@{/plugins/common/common.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/custom.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/settings.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/gleek.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/styleSwitcher.js}" ></script>
+
+
+</body>
+</html>
